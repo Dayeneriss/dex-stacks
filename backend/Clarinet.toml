@@ -1,0 +1,30 @@
+# Clarinet configuration file
+
+[project]
+name = "dex-stacks-4"
+version = "0.1.0"
+description = "A decentralized exchange built on Stacks"
+author = "Votre Nom"
+license = "MIT"
+
+[network]
+# Utilisez le testnet ou le devnet selon vos besoins
+network = "testnet" # ou "devnet"
+
+[contracts]
+# Liste des contrats à tester
+contracts = [
+  { name = "dex", path = "contracts/dex.clar" },
+  { name = "liquidity-token", path = "contracts/liquidity-token.clar" }
+]
+
+[tests]
+# Spécifiez les fichiers de test
+files = [
+  "contracts/tests/dex_test.ts",
+  "contracts/tests/liquidity-token_test.ts"
+]
+
+[env]
+# Configuration de l'environnement
+# Vous pouvez ajouter des variables d'environnement ici si nécessaire
