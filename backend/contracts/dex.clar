@@ -2,6 +2,7 @@ clarity
 ;; DEX Contract
 (define-data-var contract-owner principal tx-sender)
 
+<<<<<<< HEAD
 ;; Constants
 (define-constant ERR-UNAUTHORIZED (err u100))
 (define-constant ERR-INVALID-PAIR (err u101))
@@ -28,11 +29,14 @@ clarity
 (define-data-var contract-locked uint u0)
 (define-map operation-locks { tx-sender: principal, operation: (string-ascii 32) } uint)
 
+=======
+>>>>>>> origin/main
 ;; Pool structure
 (define-map pools 
   { token-a: principal, token-b: principal }
   { liquidity-token: principal, 
     reserve-a: uint,
+<<<<<<< HEAD
     reserve-b: uint,
     total-liquidity: uint,
     last-block-height: uint,
@@ -365,3 +369,27 @@ clarity
     ;; Release reentrancy lock
     (try! (release-reentrancy-lock))
     (ok true)))
+=======
+    reserve-b: uint }
+)
+
+;; Initialize new pool
+(define-public (create-pool 
+  (token-a principal)
+  (token-b principal)
+  (initial-a uint)
+  (initial-b uint))
+  (begin
+      ;; Add pool creation logic
+      (ok true)))
+
+;; Swap tokens
+(define-public (swap 
+  (token-in principal)
+  (amount-in uint)
+  (token-out principal)
+  (min-out uint))
+  (begin
+      ;; Add swap logic
+      (ok true)))
+>>>>>>> origin/main
