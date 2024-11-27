@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# dex-stacks
+=======
 # STACKS DEX
 
 ![STACKS DEX Interface](./assets/dex-screenshot.png)
@@ -13,3 +16,4 @@ STACKS DEX is a decentralized exchange platform built on the Stacks network. It 
 - **Governance**: Take part in the platform's decisions via a decentralized voting system.
 
 [def]: https://file%2B.vscode-resource.vscode-cdn.net/Users/jojo/Library/Mobile%20Documents/com~apple~CloudDocs/projets%20web3/16-STACKS/stacks-dex/dex-stacks/images/dex-stacks.png?version%3D1732620938362
+>>>>>>> origin/main

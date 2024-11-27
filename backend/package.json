@@ -1,0 +1,14 @@
+{
+  "name": "dex-stacks-4-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "deploy": "node scripts/deploy.js"
+  },
+  "dependencies": {
+    "@stacks/network": "^6.1.1",
+    "@stacks/transactions": "^6.1.1",
+    "@stacks/wallet-sdk": "^6.1.1",
+    "dotenv": "^16.0.3"
+  }
+}
